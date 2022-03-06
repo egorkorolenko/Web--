@@ -286,7 +286,7 @@ function start(){
                     BOARD[row][col].checker = {type: CHECKERS_TYPE.WHITE}
 
 
-    for (let row = 3; row < 4; row++)
+    for (let row = 3; row < 5; row++)
         for (let col = 0; col < 8; col++)
             if (isPlayableCEll(row, col))
                 BOARD[row][col].checker = null

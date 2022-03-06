@@ -1,0 +1,193 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url("../img/backgroung2.jpg");
+    background-color: rgb(233, 233, 233);
+    background-blend-mode: screen;
+    background-size: cover;
+    margin: 0;
+    padding: 0 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+header {
+    margin-top: -1rem;
+    align-items: center;
+    position: sticky;
+    justify-content: center;
+    top: 0;
+    display: flex;
+    background-color: #111111;
+    color: #818181;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+header h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    display: flex;
+}
+
+nav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 68px;
+    left: 0;
+    background-color: #111;
+    /*background-color: #E9E9E9;*/
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav a {
+    padding: 0 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+nav a:hover {
+    color: #f1f1f1;
+}
+
+footer {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    margin-bottom: -100px;
+    margin-right: -1rem;
+}
+
+footer p {
+    line-height: 0;
+    color: #818181;
+    max-width: 100%
+}
+
+main {
+    min-height: 75vh;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.rules {
+    margin-left: 10rem;
+}
+
+main h2 {
+    margin-left: 10rem;
+}
+
+.game-history {
+    margin-left: 53rem;
+    margin-top: -30rem;
+    height: 80vh;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.board {
+    border-collapse: collapse;
+    margin-left: 10rem;
+    border: 1px solid black;
+}
+
+.buttonsAndHints {
+    margin-top: -400px;
+    margin-left: 42rem;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 120px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 2px;
+    background-color: #788493;
+}
+
+.board th, .board td {
+    height: calc(min(7vh, 7vw));
+    width: calc(min(7vh, 7vw));
+    padding: 0;
+    background-color: #788493;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.board tr:nth-child(even) td:nth-child(odd),
+.board tr:nth-child(odd) td:nth-child(even) {
+    background-color: rgb(17, 17, 17);
+}
+
+.board tr:nth-child(even) td:nth-child(even),
+.board tr:nth-child(odd) td:nth-child(odd) {
+    background-color: rgb(129, 129, 129);
+}
+
+.board img {
+    height: 75%;
+    width: 75%;
+    vertical-align: middle;
+}
+
+.board .hint {
+    background: rgb(255, 255, 0) !important;
+}
+
+.board .can-be-filled {
+    background: rgb(0, 255, 0) !important;
+}
+
+.board .must-be-filled {
+    background: rgb(255, 0, 0) !important;
+}
+
+#move-list {
+    overflow-y: auto;
+    height: calc(100% - 5rem);
+}
+
+#move-list-input {
+    display: flex;
+    flex-flow: column;
+}
+
+.move-history {
+    display: flex;
+    flex-flow: column;
+}
+
+.area {
+    margin-top: -150px;
+    margin-left: 750px;
+    display: flex;
+    flex-flow: column;
+}
